@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Tebak Angka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Unbounded&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="shadow"></div>
+        <h1 class="judul">Tebak Angka</h1>
+        <div class="status" id="status">
+          <div class="nyawa" id="bar">
+            <span class="material-symbols-outlined"> favorite </span>
+            <span class="material-symbols-outlined"> favorite </span>
+            <span class="material-symbols-outlined"> favorite </span>
+            <span class="material-symbols-outlined"> favorite </span>
+            <span class="material-symbols-outlined"> favorite </span>
+          </div>
+        </div>
+        <div class="hasil">
+          <span id="hasil"></span>
+        </div>
+        <div class="tebakbox">
+          <div class="angka" id="angka">?</div>
+        </div>
+        <div class="input">
+          <span>Masukkan Angka Dibawah : </span>
+          <input
+            type="number"
+            id="inputangka"
+            placeholder="..."
+            class="masukan"
+          />
+        </div>
+        <div class="tombol">
+          <button onclick="start()" id="mulai">Mulai</button>
+          <button onclick="tebak()" id="mulai">Tebak</button>
+          <button onclick="reset()" id="mulai">Reset</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
